@@ -3,17 +3,63 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">        
+    {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
+       <!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="{{asset('assets/css/all.min.css')}}">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="{{asset('assets/bootstrap/css/bootstrap.min.css')}}">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="{{asset('assets/css/owl.carousel.css')}}">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
+	<!-- animate css -->
+	<link rel="stylesheet" href="{{asset('assets/css/animate.css')}}">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="{{asset('assets/css/meanmenu.min.css')}}">
+	<!-- main style -->
+	<link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
+	<!-- responsive -->
+	<link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
         {% endblock %}
 
         {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
+
+<!-- jquery -->
+	<script src="{{asset('assets/js/jquery-1.11.3.min.js')}}"></script>
+	<!-- bootstrap -->
+	<script src="{{asset('assets/bootstrap/js/bootstrap.min.js')}}"></script>
+	<!-- count down -->
+	<script src="{{asset('assets/js/jquery.countdown.js')}}"></script>
+	<!-- isotope -->
+	<script src="{{asset('assets/js/jquery.isotope-3.0.6.min.js')}}"></script>
+	<!-- waypoints -->
+	<script src="{{asset('assets/js/waypoints.js')}}"></script>
+	<!-- owl carousel -->
+	<script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
+	<!-- magnific popup -->
+	<script src="{{asset('assets/js/jquery.magnific-popup.min.js')}}"></script>
+	<!-- mean menu -->
+	<script src="{{asset('assets/js/jquery.meanmenu.min.js')}}"></script>
+	<!-- sticker  -->
+	<script src="{{asset('assets/js/sticker.js')}}"></script>
+	<!-- main js -->
+	<script src="{{asset('assets/js/main.js')}}"></script>
+
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+        {% endblock %}
+
+
+	
     </body>
 </html>
